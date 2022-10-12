@@ -1,0 +1,22 @@
+.Chessboard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap ;
+    height: 32vh;
+    width: 32vh;
+}
+.row{
+    display: flex;
+    height: 4vh;
+    width: 32vh;
+}
+.square{
+    height: 4vh;
+    width: 4vh;
+}
+.b{
+    background-color: black;
+}
+.w{
+    background-color: antiquewhite;
+}
