@@ -1,4 +1,12 @@
-.Chessboard{
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Chessboard{    
+    align-self: center;                                              
     display: flex;
     flex-direction: row;
     flex-wrap:wrap ;
