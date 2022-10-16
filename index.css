@@ -1,7 +1,8 @@
+/* need to fix spacing on everything, nothing stays put.  look for some absolute or something.  To do later fix view window*/
 body{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    
 }
 aside{
     align-self:flex-start;
@@ -15,28 +16,31 @@ aside{
     align-self: flex-start;
     background-color: bisque;
     margin-bottom: 5vh;
-    margin-top:5vh;
+
 }
 .captured{
 
-    height: 14vh;
-    width: 26vh;
+    height: 12vh;
+    width: 17vw;
     align-self: flex-start;
+    margin-right: 18vw;
 }
 .moveList{
  
-    margin-left: 1vh;
-    margin-bottom: 9.5vh;
-    margin-top: 9.5vh;
-    height: 20vh;
-    width: 15vh;
+    
+    
+    
+    height: 25vh;
+    width: 25vh;
     background-color:white ;
     border: solid black;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
 }
 
 .boardBack{
-    height: 62vh;
-    width: 62vh;
+    height: 32vw;
+    width: 32vw;
     margin-top: 15vh;
     display: flex;
     flex-direction: row;
