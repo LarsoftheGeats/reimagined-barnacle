@@ -6,6 +6,7 @@
 //refactor later.  Basic functionality as of 10/12/2022 
 */
 const squareClickListener = [];
+
 rows = 8;
 columns = 8;  
 
@@ -22,7 +23,8 @@ for (let i =0; i< rows; i++){
         
         squareList[k].setAttribute('id', `${Letters[i]}${k+1}`);
         squareClickListener.push(document.getElementById(`${Letters[i]}${k+1}`));
-        squareClickListener[count].addEventListener("click",clickListener);
+        squareClickListener[count].addEventListener('click',clickListener);
+        squareClickListener[count].addEventListener('mouseout', mouseOutListener)
         //squareList[k]=addSquare()
         count++;
 
@@ -32,6 +34,23 @@ for (let i =0; i< rows; i++){
 
 function clickListener(evt){
     evt.preventDefault();
-    alert(evt);
+    let square = evt.target;
+    console.log(evt)
+    if (!square.className.includes(", selected")){
+        evt.target.className=evt.target.className + ", selected";
+    }
+    //console.log(square);
+    //alert(`${square}`);//Testing, worked  Able to appropriately target correct squares
+    //want to change target 
+    
+}
+
+function mouseOutListener(evt){
+    evt.preventDefault();
+    value = evt.target.className;
+    let square = evt.target;
+    if (value.includes(", selected")){
+        evt.target.className=evt.target.className.replace(", selected", "");
+    }
 }
 
