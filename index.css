@@ -69,9 +69,11 @@ aside{
 }
 .b{
     background-color: black;
+    color: white;
 }
 .w{
     background-color: antiquewhite;
+    color: black;
 }
 .rightDumm{
     height:50vh;
@@ -79,4 +81,12 @@ aside{
 }
 .selected{
     background-color: grey;
+    color: red;
+}
+
+img{
+    height: 6vh;
+    width: 6vh;
+    opacity: 0.4;
+    z-index: 2;
 }
